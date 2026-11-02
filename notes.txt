@@ -1,0 +1,3 @@
+
+IDEAS:
+- make temp file, and write to to it when user leaves the current line to keep track of old lines
