@@ -1,3 +1,7 @@
 
 IDEAS:
 - make temp file, and write to to it when user leaves the current line to keep track of old lines
+
+- for commands, in command mode just read user input but don't print to screen, then processing that user input sequentially
+
+- eac

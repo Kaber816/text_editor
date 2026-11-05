@@ -11,7 +11,7 @@ int main (int argc, char *argv[])
     // No args passed
     if (argc == 1)
     {
-        printf("\x1b[H\x1b[2J\x1b[3J"); // Clear the terminal
+        printf("\x1b[H\x1b[2J\x1b[3J"); // move cursor to home, clear lines, clear saved lines
         printf("\x1b[2 q"); // Make cursor steady block
         fflush(stdout); // Flush to immediately output
         
