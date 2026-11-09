@@ -1,6 +1,23 @@
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
+
+// Linked list lib that allows O(1) appending, insertion, and removals
 typedef struct Node
 {
-    struct Node* next;
-    struct Node* prev;
-    char data[];
+    struct Node *next;
+    struct Node *prev;
+    char data[100];
 } Node;
+
+typedef struct LinkedList
+{
+    Node **head;
+    Node **tail;
+} LinkedList;
+
+void appendNode(LinkedList *list);
+void insertNode(LinkedList *list, int index);
+void removeNode(LinkedList *list, int index);
+char *getNodeData(LinkedList *list, int index);
+
+#endif

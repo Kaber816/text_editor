@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_LINE_LENGTH 256
+#define MAX_LINE_LENGTH 100
 
 int CreateNewLine();
 
