@@ -11,13 +11,14 @@ typedef struct Node
 
 typedef struct LinkedList
 {
-    Node **head;
-    Node **tail;
+    struct Node **head;
+    struct Node **tail;
 } LinkedList;
 
 void appendNode(LinkedList *list);
 void insertNode(LinkedList *list, int index);
 void removeNode(LinkedList *list, int index);
 char *getNodeData(LinkedList *list, int index);
+void initializeList(LinkedList *list);
 
 #endif

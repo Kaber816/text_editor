@@ -8,7 +8,7 @@ void appendNode(LinkedList *list)
 
     if (*(list->head) == NULL)
     {
-        list->head->next = newNode;
+        list->head = &newNode;
     }
     else 
     {
@@ -27,3 +27,12 @@ void removeNode(Node **head, int index)
 }
 
 char* getNodeData(LinkedList *list, int index);
+
+void initializeList(LinkedList *list)
+{
+    if ((*(list->head)) == NULL && (*(list->tail) == NULL))
+    {
+        list->head = malloc(sizeof(Node));
+    }
+
+}
